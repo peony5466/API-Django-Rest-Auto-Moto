@@ -1,0 +1,20 @@
+# Environnement virtuel
+venv/
+
+# Fichiers Python 
+__pycache__/
+*.pyc
+
+# Base de données SQLite
+db.sqlite3
+
+# Fichiers temporaires
+*.log
+*.pot
+*.py[cod]
+*.swp
+.DS_Store
+
+# Dossiers migrations
+*/migrations/*.pyc
+*/migrations/*.py[cod]
