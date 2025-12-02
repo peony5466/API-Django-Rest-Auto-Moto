@@ -12,7 +12,7 @@ class ConcessionnaireDetailSerializer(ModelSerializer):
   class Meta:
     model= Concessionnaire
     #liste des champs sans le 'siret'
-    fields= ['id', 'nom','created_at', 'updated_at']
+    fields= ['id', 'nom']
 
 #serializer Vehicule
 class VehiculeSerializer(ModelSerializer):

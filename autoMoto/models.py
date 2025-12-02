@@ -6,9 +6,7 @@ class Concessionnaire(Model):
   nom = CharField(max_length=64)
   #siret limité a 14 chiffres + validation
   siret = CharField(max_length=14, validators=[RegexValidator(r'^\d{14}$', message='Le SIRET doit contenir 14 chiffres')])
-  #ce n’est pas demandé, mais j’ai pris l’habitude de le faire
-  created_at = DateTimeField(auto_now_add=True)
-  updated_at = DateTimeField(auto_now=True)
+
   
   def __str__(self):
     return self.nom
@@ -24,8 +22,7 @@ class Vehicule(Model):
   marque = CharField(max_length=64)
   cheveaux = IntegerField()
   prix_ht = FloatField()
-  created_at = DateTimeField(auto_now_add=True)
-  updated_at = DateTimeField(auto_now=True)
+
 
   def __str__(self):
     return f"{self.marque}({self.type})"
